@@ -1,0 +1,78 @@
+html,
+body {
+  font-family: "Noto Sans", "Noto Sans CJK JP", "Helvetica Neue", "Helvetica",
+    "Arial", "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+}
+
+#wikibody > h1 {
+  background-color: #001449;
+  color: #e9e9e9;
+  padding: 0.2em 0 0.2em 1em;
+  font-size: 180%;
+}
+#wikibody > h2 {
+  color: #0a0a03;
+  font-size: 120%;
+  padding: 0.2em 0 0.2em 0.2em;
+  border-bottom: solid 2px #012677;
+}
+#wikibody > h3 {
+  color: #0a0a03;
+  font-size: 130%;
+  border-left: solid #012677 10px;
+  padding: 0.2em 0 0.2em 0.5em;
+}
+
+.iframeWrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+.iframeWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+blockquote {
+  position: relative;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  font-style: italic;
+  color: #464646;
+  border-left: solid 50px #3ca5d4;
+  background: #e0f5ff;
+}
+
+blockquote:before {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: -55px;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "“";
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 90px;
+  line-height: 1;
+}
+
+blockquote p {
+  position: relative;
+  padding: 0;
+  margin: 10px 0;
+  z-index: 3;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
